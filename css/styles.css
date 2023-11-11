@@ -6,7 +6,9 @@ button {
 }
 .logo-link,
 .menu-link,
-.address-link {
+.address-link,
+.mob-menu-link,
+.mob-address-link {
   text-decoration: none;
 }
 h1,
@@ -82,6 +84,29 @@ body {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.social-list-icon {
+  fill: #f4f4fd;
+}
+.social-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  justify-content: center;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-link:focus,
+.social-list-link:hover {
+  background-color: #404bbf;
+}
 
 /*============== mobile ================*/
 .menu {
@@ -95,6 +120,140 @@ body {
   border: none;
   padding: 0;
   line-height: 0;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  transform: translateX(0%);
+}
+.cont-menu {
+  position: relative;
+}
+.mob-menu-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  line-height: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border: 1px solid #2e2f42;
+  opacity: 0.1;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.mob-menu-nav {
+  padding-top: 72px;
+  margin-bottom: 168px;
+}
+.mob-menu-item {
+  padding-bottom: 40px;
+}
+.mob-menu-item:last-child {
+  padding-bottom: 0;
+}
+
+.mob-menu-link {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.mob-menu-link.active,
+.mob-address-link.active {
+  color: #404bbf;
+}
+.mob-address-link {
+  color: #434455;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+}
+.mob-menu-address-item {
+  padding-bottom: 24px;
+}
+.mob-menu-contacts {
+  margin-bottom: 48px;
+}
+.mob-social-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.hero-section {
+  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/people-office-m.jpg');
+  max-width: 320px;
+  height: 432px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/people-office-m@2x.jpg');
+  }
+}
+.main-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  max-width: 288px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 72px;
+  margin-bottom: 72px;
+}
+.button-ord {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  padding: 16px 32px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ================== tablet ===================*/
@@ -157,6 +316,33 @@ body {
     bottom: -1px;
     left: 0%;
   }
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/people-office-t.jpg');
+    max-width: 768px;
+    height: 436px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero/people-office-t@2x.jpg');
+    }
+  }
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+    padding-top: 112px;
+  }
 }
 
 /*==================== desktop ==========================*/
@@ -196,5 +382,29 @@ body {
   .footer-subscribe-btn:hover,
   .footer-subscribe-btn:focus {
     background-color: #404bbf;
+  }
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/people-office.jpg');
+    max-width: 1440px;
+    height: 660px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero/people-office@2x.jpg');
+    }
+  }
+  .main-title {
+    margin-bottom: 48px;
+    padding-top: 188px;
   }
 }
