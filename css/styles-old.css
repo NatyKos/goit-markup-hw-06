@@ -184,7 +184,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
 } */
-.benefits-description,
+/* .benefits-description,
 .team-work,
 .portfolio-descr,
 .footer-descr {
@@ -193,7 +193,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+} */
 /* .section-header {
   text-align: center;
   font-size: 36px;
@@ -204,24 +204,24 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 } */
-.team {
+/* .team {
   background-color: #f4f4fd;
-}
-.team-item {
+} */
+/* .team-item {
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-.team-person,
+} */
+/* .team-person,
 .team-work {
   text-align: center;
-}
-.team-person {
+} */
+/* .team-person {
   margin-bottom: 8px;
-}
+} */
 .logo-footer-end {
   color: #f4f4fd;
 }
@@ -267,15 +267,15 @@ img {
   width: 264px;
 } */
 
-.team-list {
+/* .team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-}
-.team-descr {
+} */
+/* .team-descr {
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;

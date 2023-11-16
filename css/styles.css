@@ -270,6 +270,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .benefits-item-title {
   margin-bottom: 8px;
@@ -285,6 +286,48 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
+}
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  justify-content: center;
+}
+.team {
+  background-color: #f4f4fd;
+}
+.team-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-descr {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.team-person,
+.team-work {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-person,
+.portfolio-header {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.team-work,
+.portfolio-descr,
+.footer-descr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* ================== tablet ===================*/
@@ -388,6 +431,15 @@ body {
   .benefits-item {
     width: calc((100%-24px) / 2);
   }
+  .team-list {
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+  }
+  .team-item {
+    width: calc((100%-24px) / 2);
+  }
 }
 
 /*==================== desktop ==========================*/
@@ -476,5 +528,9 @@ body {
   }
   .benefits-description {
     width: 264px;
+    font-weight: 500;
+  }
+  .team-list {
+    flex-wrap: nowrap;
   }
 }
