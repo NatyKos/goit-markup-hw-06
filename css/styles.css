@@ -713,7 +713,7 @@ body {
   .contacts {
     font-style: normal;
     display: flex;
-    justify-content: column;
+    flex-direction: column;
     gap: 12px;
   }
   .address-link {
