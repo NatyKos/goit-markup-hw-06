@@ -938,7 +938,7 @@ body {
   .container-footer {
     flex-wrap: nowrap;
     gap: 0;
-    padding-left: 0px;
+    padding-left: 16px;
     padding-right: 0px;
   }
   .footer-start {
