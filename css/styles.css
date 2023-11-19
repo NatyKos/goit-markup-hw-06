@@ -255,6 +255,7 @@ body {
   margin-right: auto;
   margin-bottom: 72px;
   padding-top: 24px;
+  text-transform: capitalize;
 }
 .button-ord {
   font-family: inherit;
@@ -789,6 +790,7 @@ body {
     line-height: 1.07;
     max-width: 496px;
     margin-bottom: 36px;
+    text-transform: none;
   }
   .benefits-item-title {
     text-align: left;
@@ -827,7 +829,7 @@ body {
     align-items: baseline;
     gap: 72px 24px;
     flex-wrap: wrap;
-    padding-left: 92px;
+    padding-left: 108px;
   }
 
   .footer-descr {
